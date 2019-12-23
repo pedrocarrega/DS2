@@ -11,18 +11,18 @@
 	</properties>
 	<struct>
 		<and abstract="true" mandatory="true" name="DS2">
-			<and mandatory="true" name="Input">
+			<and abstract="true" mandatory="true" name="Input">
 				<feature mandatory="true" name="MK"/>
 			</and>
-			<alt mandatory="true" name="Linguagem">
+			<alt abstract="true" mandatory="true" name="Linguagem">
 				<feature name="EN"/>
 				<feature name="PT"/>
 			</alt>
-			<and mandatory="true" name="Output">
+			<and abstract="true" mandatory="true" name="Output">
 				<feature mandatory="true" name="Monitor"/>
 				<feature name="Sonoro"/>
 			</and>
-			<and mandatory="true" name="Dispositivos">
+			<and abstract="true" mandatory="true" name="Dispositivos">
 				<alt name="Sensores">
 					<feature name="Movimento"/>
 					<feature name="Pulsacao"/>
@@ -38,7 +38,7 @@
 			<and name="Alertas">
 				<feature mandatory="true" name="SMS"/>
 			</and>
-			<or name="Deficiencias">
+			<or abstract="true" name="Deficiencias">
 				<feature name="Visuais"/>
 				<feature name="Auditivas"/>
 			</or>
@@ -61,6 +61,20 @@
 			<imp>
 				<var>Sensores</var>
 				<var>Alertas</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Auditivas</var>
+				<var>Lampada</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Auditivas</var>
+				<not>
+					<var>Sonoro</var>
+				</not>
 			</imp>
 		</rule>
 	</constraints>
