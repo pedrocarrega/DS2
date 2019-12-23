@@ -36,7 +36,7 @@
 			</and>
 			<feature mandatory="true" name="Contactos"/>
 			<and name="Alertas">
-				<feature name="SMS"/>
+				<feature mandatory="true" name="SMS"/>
 			</and>
 			<or name="Deficiencias">
 				<feature name="Visuais"/>
@@ -55,6 +55,12 @@
 			<imp>
 				<var>Visuais</var>
 				<var>Sonoro</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Sensores</var>
+				<var>Alertas</var>
 			</imp>
 		</rule>
 	</constraints>
