@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Alertas {
 	// TODO Auto-generated aspect
 }

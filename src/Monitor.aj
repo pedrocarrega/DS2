@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Monitor {
 	// TODO Auto-generated aspect
 }

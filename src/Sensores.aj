@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Sensores {
 	// TODO Auto-generated aspect
 }

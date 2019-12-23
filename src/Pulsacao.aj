@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Pulsacao {
 	// TODO Auto-generated aspect
 }

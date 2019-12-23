@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Lampada {
 	// TODO Auto-generated aspect
 }

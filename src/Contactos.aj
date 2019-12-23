@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Contactos {
 	// TODO Auto-generated aspect
 }

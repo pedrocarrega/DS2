@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Deficiencias {
 	// TODO Auto-generated aspect
 }

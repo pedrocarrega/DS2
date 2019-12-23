@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Luz {
 	// TODO Auto-generated aspect
 }

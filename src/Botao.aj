@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Botao {
 	// TODO Auto-generated aspect
 }

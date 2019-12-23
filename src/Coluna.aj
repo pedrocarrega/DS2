@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Coluna {
 	// TODO Auto-generated aspect
 }

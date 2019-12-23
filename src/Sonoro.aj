@@ -1,4 +1,4 @@
 
-public aspect MK {
+public aspect Sonoro {
 	// TODO Auto-generated aspect
 }

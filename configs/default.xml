@@ -6,4 +6,22 @@
 	<feature automatic="selected" name="Linguagem"/>
 	<feature name="EN"/>
 	<feature manual="selected" name="PT"/>
+	<feature name="Output"/>
+	<feature name="Monitor"/>
+	<feature name="Sonoro"/>
+	<feature name="Dispositivos"/>
+	<feature name="Sensores"/>
+	<feature name="Movimento"/>
+	<feature name="Pulsacao"/>
+	<feature name="Vestivel"/>
+	<feature name="Botao"/>
+	<feature name="Luz"/>
+	<feature name="Coluna"/>
+	<feature name="Lampada"/>
+	<feature name="Contactos"/>
+	<feature name="Alertas"/>
+	<feature name="SMS"/>
+	<feature name="Deficiencias"/>
+	<feature name="Visuais"/>
+	<feature name="Auditivas"/>
 </configuration>

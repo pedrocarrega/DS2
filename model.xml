@@ -18,6 +18,30 @@
 				<feature name="EN"/>
 				<feature name="PT"/>
 			</or>
+			<and mandatory="true" name="Output">
+				<feature name="Monitor"/>
+				<feature name="Sonoro"/>
+			</and>
+			<and mandatory="true" name="Dispositivos">
+				<and name="Sensores">
+					<feature name="Movimento"/>
+					<feature name="Pulsacao"/>
+				</and>
+				<and name="Vestivel">
+					<feature name="Botao"/>
+					<feature name="Luz"/>
+				</and>
+				<feature name="Coluna"/>
+				<feature name="Lampada"/>
+			</and>
+			<feature mandatory="true" name="Contactos"/>
+			<and name="Alertas">
+				<feature name="SMS"/>
+			</and>
+			<and name="Deficiencias">
+				<feature name="Visuais"/>
+				<feature name="Auditivas"/>
+			</and>
 		</and>
 	</struct>
 </featureModel>
