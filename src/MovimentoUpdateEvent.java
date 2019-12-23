@@ -1,4 +1,6 @@
-public class MovimentoUpdateEvent {
+import com.bezirk.middleware.messages.Event;
+
+public class MovimentoUpdateEvent extends Event{
 	
 	private static final long serialVersionUID = 1L;
 	
