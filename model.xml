@@ -44,4 +44,18 @@
 			</or>
 		</and>
 	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Sonoro</var>
+				<var>Coluna</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Visuais</var>
+				<var>Sonoro</var>
+			</imp>
+		</rule>
+	</constraints>
 </featureModel>
