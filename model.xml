@@ -14,19 +14,19 @@
 			<and mandatory="true" name="Input">
 				<feature mandatory="true" name="MK"/>
 			</and>
-			<or mandatory="true" name="Linguagem">
+			<alt mandatory="true" name="Linguagem">
 				<feature name="EN"/>
 				<feature name="PT"/>
-			</or>
+			</alt>
 			<and mandatory="true" name="Output">
-				<feature name="Monitor"/>
+				<feature mandatory="true" name="Monitor"/>
 				<feature name="Sonoro"/>
 			</and>
 			<and mandatory="true" name="Dispositivos">
-				<and name="Sensores">
+				<alt name="Sensores">
 					<feature name="Movimento"/>
 					<feature name="Pulsacao"/>
-				</and>
+				</alt>
 				<and name="Vestivel">
 					<feature name="Botao"/>
 					<feature name="Luz"/>
@@ -38,10 +38,10 @@
 			<and name="Alertas">
 				<feature name="SMS"/>
 			</and>
-			<and name="Deficiencias">
+			<or name="Deficiencias">
 				<feature name="Visuais"/>
 				<feature name="Auditivas"/>
-			</and>
+			</or>
 		</and>
 	</struct>
 </featureModel>

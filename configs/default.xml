@@ -4,10 +4,10 @@
 	<feature automatic="selected" name="Input"/>
 	<feature automatic="selected" name="MK"/>
 	<feature automatic="selected" name="Linguagem"/>
-	<feature name="EN"/>
+	<feature automatic="unselected" name="EN"/>
 	<feature manual="selected" name="PT"/>
 	<feature automatic="selected" name="Output"/>
-	<feature name="Monitor"/>
+	<feature automatic="selected" manual="selected" name="Monitor"/>
 	<feature name="Sonoro"/>
 	<feature automatic="selected" name="Dispositivos"/>
 	<feature name="Sensores"/>
