@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="Botao.aj|Sonoro.aj|Movimento.aj|Vestivel.aj|Monitor.aj|Contactos.aj|Output.aj|Pulsacao.aj|Dispositivos.aj|Sensores.aj|Deficiencias.aj|Auditivas.aj|EN.aj|Coluna.aj|Alertas.aj|Luz.aj|Lampada.aj|SMS.aj|Visuais.aj" kind="src" path="src"/>
+	<classpathentry excluding="Botao.aj|Sonoro.aj|Movimento.aj|Vestivel.aj|Monitor.aj|Pulsacao.aj|Sensores.aj|Deficiencias.aj|Auditivas.aj|EN.aj|Coluna.aj|Alertas.aj|Luz.aj|Lampada.aj|SMS.aj|Visuais.aj" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/bcprov-jdk15on-1.49.jar"/>

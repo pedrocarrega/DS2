@@ -1,4 +1,7 @@
 
 public aspect PT {
-	// TODO Auto-generated aspect
+	before() : execution(* *.main(..)) {
+		I18N.setInstance(new I18N("pt","PT"));
+		//System.err.println("This product speaks portuguese.");
+	}
 }
