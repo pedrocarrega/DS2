@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="DS2"/>
+	<feature automatic="selected" name="Input"/>
+	<feature automatic="selected" name="MK"/>
+	<feature automatic="selected" name="Linguagem"/>
+	<feature manual="selected" name="EN"/>
+	<feature automatic="unselected" name="PT"/>
+	<feature automatic="selected" name="Output"/>
+	<feature automatic="selected" name="Monitor"/>
+	<feature automatic="selected" name="Sonoro"/>
+	<feature automatic="selected" name="Dispositivos"/>
+	<feature automatic="selected" name="Sensores"/>
+	<feature automatic="unselected" name="Movimento"/>
+	<feature manual="selected" name="Pulsacao"/>
+	<feature automatic="selected" name="Vestivel"/>
+	<feature manual="selected" name="Botao"/>
+	<feature name="Luz"/>
+	<feature automatic="selected" name="Coluna"/>
+	<feature name="Lampada"/>
+	<feature automatic="selected" name="Contactos"/>
+	<feature automatic="selected" name="Alertas"/>
+	<feature manual="selected" name="SMS"/>
+	<feature automatic="selected" name="Deficiencias"/>
+	<feature manual="selected" name="Visuais"/>
+	<feature name="Auditivas"/>
+</configuration>
