@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.bezirk.middleware.Bezirk;
 import com.bezirk.middleware.addressing.ZirkEndPoint;
@@ -18,10 +19,8 @@ public class Hub {
 		reminders = new Reminders();
 		reminders.start();
 		new Hub();
-		System.out.println("test: " + test.size());
 	}
-	
-	
+
 
 	public Hub() {
 		
@@ -72,5 +71,51 @@ public class Hub {
 		}
 		return result;
 	}
+	
+	private static void operations() {
+
+        Scanner sc = new Scanner(System.in);
+
+        while(true) {
+            try {
+                System.out.println("Selecione uma das seguintes possiveis operações:\nAviso\nContacto");
+                String input = sc.nextLine().toLowerCase();
+                if(input.equals("aviso")) {
+                    aviso(sc);
+                }else if(input.equals("contacto")){
+                    contacto(sc);
+                }else {
+                    System.out.println("Tente novamente");
+                }
+            }catch(Exception e) {
+                System.out.println("Inseriu algum dado errado, tente novamente");
+            }
+        }
+    }
+
+    private static void contacto(Scanner sc) {
+//        System.out.println("Indique o nome do contacto");
+//        String name = sc.nextLine();
+        System.out.println("Insira o numero telefonico do contacto");
+        String number = sc.nextLine();
+
+        //contactos.add(number);
+
+    }
+
+    private static void aviso(Scanner sc) {
+
+        System.out.println("Indique qual a mensagem do aviso");
+        String msg = sc.nextLine();
+        System.out.println("Insira a data a iniciar com o seguinte formato (Ex.2019-10-01|08:00)");
+        String time = sc.nextLine();
+        System.out.println("Insira a data para terminar com o seguinte formato (Ex.2019-10-01|08:00)");
+        String endTime = sc.nextLine();
+        System.out.println("Insira o numero a periodicidade em horas que tem de receber o aviso Ex.8");
+        int timeFrame = sc.nextInt();
+
+        reminders.addReminder(new ReminderEvent(msg, "112", time, endTime, timeFrame));
+
+    }
 
 }

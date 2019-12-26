@@ -8,7 +8,7 @@
 	<feature automatic="unselected" name="PT"/>
 	<feature automatic="selected" name="Output"/>
 	<feature automatic="selected" name="Monitor"/>
-	<feature name="Sonoro"/>
+	<feature automatic="unselected" name="Sonoro"/>
 	<feature automatic="selected" name="Dispositivos"/>
 	<feature name="Sensores"/>
 	<feature name="Movimento"/>
@@ -17,11 +17,11 @@
 	<feature name="Botao"/>
 	<feature name="Luz"/>
 	<feature name="Coluna"/>
-	<feature automatic="selected" name="Lampada"/>
+	<feature automatic="selected" manual="selected" name="Lampada"/>
 	<feature automatic="selected" name="Contactos"/>
-	<feature name="Alertas"/>
-	<feature name="SMS"/>
+	<feature automatic="selected" name="Alertas"/>
+	<feature automatic="selected" name="SMS"/>
 	<feature automatic="selected" name="Deficiencias"/>
-	<feature name="Visuais"/>
+	<feature automatic="unselected" name="Visuais"/>
 	<feature manual="selected" name="Auditivas"/>
 </configuration>

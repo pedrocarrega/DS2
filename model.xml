@@ -35,7 +35,7 @@
 				<feature name="Lampada"/>
 			</and>
 			<feature mandatory="true" name="Contactos"/>
-			<and name="Alertas">
+			<and mandatory="true" name="Alertas">
 				<feature mandatory="true" name="SMS"/>
 			</and>
 			<or abstract="true" name="Deficiencias">
@@ -55,12 +55,6 @@
 			<imp>
 				<var>Visuais</var>
 				<var>Sonoro</var>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>Sensores</var>
-				<var>Alertas</var>
 			</imp>
 		</rule>
 		<rule>
