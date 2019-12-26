@@ -1,4 +1,4 @@
 
 public enum Messages {
-	OPTION_MSG, START_HUB, 
+	OPTION_MSG, START_HUB 
 }

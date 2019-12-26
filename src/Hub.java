@@ -13,7 +13,7 @@ public class Hub {
 	public Hub() {
 		BezirkMiddleware.initialize();
 		final Bezirk bezirk = BezirkMiddleware.registerZirk("Hub");
-		System.err.println(Messages.START_HUB);
+		System.err.println(I18N.getString(Messages.START_HUB));
 		
 		final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
 		
@@ -25,6 +25,9 @@ public class Hub {
 				if(event instanceof AlertEvent) {
 					AlertEvent alert = (AlertEvent) event;
 					System.err.println(alert.toString());
+				}else if(event instanceof MovimentoUpdateEvent) {
+					MovimentoUpdateEvent movimento = (MovimentoUpdateEvent) event;
+					System.err.println(movimento.toString());
 				}
 				
 			}

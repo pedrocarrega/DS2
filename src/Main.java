@@ -13,6 +13,9 @@ public class Main {
 		 
 		 BezirkMiddleware.initialize();
 	     bezirk = BezirkMiddleware.registerZirk("Test");
+	     AlertEvent alert = new AlertEvent("Test", "112");
+	     bezirk.sendEvent(alert);
+	     System.out.println("Enviei");
 
 	}
 
