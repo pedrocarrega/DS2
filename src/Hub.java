@@ -15,7 +15,7 @@ public class Hub {
 		final Bezirk bezirk = BezirkMiddleware.registerZirk("Hub");
 		System.err.println(Messages.START_HUB);
 		
-		final EventSet setEvents = new EventSet(AlertEvent.class, );//TODO
+		final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
 		
 		setEvents.setEventReceiver(new EventSet.EventReceiver() {
 			
