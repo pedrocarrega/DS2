@@ -3,7 +3,7 @@ import java.util.List;
 import com.bezirk.middleware.Bezirk;
 import com.bezirk.middleware.java.proxy.BezirkMiddleware;
 
-public class Main {
+public class Product {
 	
 	private static Bezirk bezirk;
 	private static List<String> contacts;
