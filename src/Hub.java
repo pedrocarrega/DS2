@@ -5,8 +5,12 @@ import com.bezirk.middleware.messages.Event;
 import com.bezirk.middleware.messages.EventSet;
 
 public class Hub {
-
+	
+	private static Reminders reminders;
+	
 	public static void main(String[] args) {
+		reminders = new Reminders();
+		reminders.start();
 		new Hub();
 	}
 	
@@ -28,6 +32,9 @@ public class Hub {
 				}else if(event instanceof MovimentoUpdateEvent) {
 					MovimentoUpdateEvent movimento = (MovimentoUpdateEvent) event;
 					System.err.println(movimento.toString());
+				}else if(event instanceof ReminderEvent) {
+					ReminderEvent reminder = (ReminderEvent) event;
+					reminders.addReminder(reminder);
 				}
 				
 			}
