@@ -38,6 +38,13 @@ public class Hub {
 			
 			@Override
 			public void receiveEvent(Event event, ZirkEndPoint sender) {
+				//in case we need to do specific stuff
+				if (event instanceof ReminderEvent) {
+					ReminderEvent reminder = (ReminderEvent) event;
+					//do stuff
+				}
+				
+				//print event message
 				System.out.println(event.toString());
 				/*
 				//TODO
