@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import com.bezirk.middleware.Bezirk;
@@ -11,7 +13,7 @@ import com.bezirk.middleware.messages.EventSet;
 public class Hub {
 
 	private static Reminders reminders;
-	//private static List<String> contacts;
+	private static Map<String, String> contacts = new HashMap<>();;
 	private static List <Class<? extends Event>> test = new ArrayList<>();
 
 	public static void main(String[] args) {
@@ -19,6 +21,8 @@ public class Hub {
 		reminders = new Reminders();
 		reminders.start();
 		new Hub();
+		operations();
+		
 	}
 
 
@@ -103,12 +107,13 @@ public class Hub {
 	}
 
 	private static void contacto(Scanner sc) {
-		//        System.out.println("Indique o nome do contacto");
-		//        String name = sc.nextLine();
+
+		System.out.println("Indique o nome do contacto");
+		String name = sc.nextLine();
 		System.out.println("Insira o numero telefonico do contacto");
 		String number = sc.nextLine();
 
-		//contactos.add(number);
+		contacts.put(name, number);
 
 	}
 
