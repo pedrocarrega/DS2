@@ -113,22 +113,29 @@ public class Hub {
 		System.out.println("Insira o numero telefonico do contacto");
 		String number = sc.nextLine();
 
-		contacts.put(name, number);
+		if(!contacts.get(name).equals(number)) {
+			contacts.put(name, number);
+			System.out.println(I18N.getString(Messages.CONTACT_GOOD));
+		}else {
+			System.out.println(I18N.getString(Messages.CONTACT_BAD));
+		}
+		
 
 	}
 
 	private static void aviso(Scanner sc) {
 
-		System.out.println("Indique qual a mensagem do aviso");
+		System.out.println(I18N.getString(Messages.INSERT_MSG));
 		String msg = sc.nextLine();
-		System.out.println("Insira a data a iniciar com o seguinte formato (Ex.2019-10-01T08:00)");
+		System.out.println(I18N.getString(Messages.INSERT_DATE));
 		String time = sc.nextLine();
-		System.out.println("Insira a data para terminar com o seguinte formato (Ex.2019-10-01T08:00)");
+		System.out.println(I18N.getString(Messages.INSERT_DATE));
 		String endTime = sc.nextLine();
-		System.out.println("Insira o numero a periodicidade em horas que tem de receber o aviso Ex.8");
+		System.out.println(I18N.getString(Messages.INSERT_RATE));
 		int timeFrame = sc.nextInt();
 
 		reminders.addReminder(new ReminderEvent(msg, "112", time, endTime, timeFrame));
+		System.err.println(I18N.getString(Messages.SENT_REMINDER) + " 112");
 
 	}
 
