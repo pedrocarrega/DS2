@@ -17,10 +17,10 @@ public class Product {
 			AlertEvent alert = new AlertEvent("Test", "112");
 			bezirk.sendEvent(alert);
 			System.out.println("Enviei1");
-			MovimentoUpdateEvent move = new MovimentoUpdateEvent(0, 0, 0);
-			bezirk.sendEvent(move);
-			System.out.println("Enviei2");
-			Thread.sleep(2000);
+			//MovimentoUpdateEvent move = new MovimentoUpdateEvent(0, 0, 0);
+			//bezirk.sendEvent(move);
+			//System.out.println("Enviei2");
+			Thread.sleep(15000);
 		}
 
 	}

@@ -13,11 +13,13 @@ import com.bezirk.middleware.messages.EventSet;
 public class Hub {
 
 	private static Reminders reminders;
-	private static Map<String, String> contacts = new HashMap<>();;
-	private static List <Class<? extends Event>> test = new ArrayList<>();
+	private static Map<String, String> contacts;
+	private static List <Class<? extends Event>> listEvents;
 
 	public static void main(String[] args) {
 
+		contacts = new HashMap<>();
+		listEvents = new ArrayList<>();
 		reminders = new Reminders();
 		reminders.start();
 		new Hub();
@@ -32,20 +34,25 @@ public class Hub {
 		final Bezirk bezirk = BezirkMiddleware.registerZirk("Hub");
 		System.err.println(I18N.getString(Messages.START_HUB));
 
-		final Class<? extends Event>[] events = getAlerts(test);
+		final Class<? extends Event>[] events = getAlerts(listEvents);
 
-		//final EventSet setEvents = new EventSet(events);
+		final EventSet setEvents = new EventSet(events);
 
-		final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
+		//final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
 
 		setEvents.setEventReceiver(new EventSet.EventReceiver() {
 
 			@Override
 			public void receiveEvent(Event event, ZirkEndPoint sender) {
 				//in case we need to do specific stuff
+				if (event instanceof AlertEvent) {
+					AlertEvent alert = (AlertEvent) event;
+					foward(alert);
+				}
+				
 				if (event instanceof ReminderEvent) {
 					ReminderEvent reminder = (ReminderEvent) event;
-					//do stuff
+					reminders.addReminder(reminder);
 				}
 
 				//print event message
@@ -71,8 +78,13 @@ public class Hub {
 		bezirk.subscribe(setEvents);
 	}
 
+	protected void foward(AlertEvent alert) {
+		//TODO Implementar SMS
+	}
+
+
 	public void addEvent(Class<? extends Event> class1) {
-		test.add(class1);
+		listEvents.add(class1);
 
 	}
 

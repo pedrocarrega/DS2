@@ -27,7 +27,7 @@
 					<feature name="Movimento"/>
 					<feature name="Pulsacao"/>
 				</alt>
-				<and name="Vestivel">
+				<and abstract="true" name="Vestivel">
 					<feature name="Botao"/>
 					<feature name="Luz"/>
 				</and>

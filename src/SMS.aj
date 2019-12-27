@@ -1,4 +1,8 @@
 
 public aspect SMS {
-	// TODO Auto-generated aspect
+	
+	pointcut sendSms() : call (void foward(AlertEvent));
+	after(): sendSms() {
+	        System.out.println(I18N.getString(Messages.SENT_SMS));
+	}
 }
