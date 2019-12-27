@@ -34,9 +34,9 @@ public class Hub {
 
 		final Class<? extends Event>[] events = getAlerts(test);
 
-		final EventSet setEvents = new EventSet(events);
+		//final EventSet setEvents = new EventSet(events);
 
-		//final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
+		final EventSet setEvents = new EventSet(AlertEvent.class,  MovimentoUpdateEvent.class);//TODO
 
 		setEvents.setEventReceiver(new EventSet.EventReceiver() {
 
