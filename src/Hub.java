@@ -116,9 +116,9 @@ public class Hub {
 
 		System.out.println("Indique qual a mensagem do aviso");
 		String msg = sc.nextLine();
-		System.out.println("Insira a data a iniciar com o seguinte formato (Ex.2019-10-01|08:00)");
+		System.out.println("Insira a data a iniciar com o seguinte formato (Ex.2019-10-01T08:00)");
 		String time = sc.nextLine();
-		System.out.println("Insira a data para terminar com o seguinte formato (Ex.2019-10-01|08:00)");
+		System.out.println("Insira a data para terminar com o seguinte formato (Ex.2019-10-01T08:00)");
 		String endTime = sc.nextLine();
 		System.out.println("Insira o numero a periodicidade em horas que tem de receber o aviso Ex.8");
 		int timeFrame = sc.nextInt();
