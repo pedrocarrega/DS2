@@ -1,7 +1,0 @@
-
-public aspect PT {
-	before() : execution(* *.main(..)) {
-		I18N.setInstance(new I18N("pt","PT"));
-		//System.err.println("This product speaks portuguese.");
-	}
-}

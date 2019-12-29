@@ -1,0 +1,2 @@
+O projeto envolve a criacao de um linha de producao de produtos, produtos estes que usam a ferramenta de middleware Berzik. O sistema utiliza uma arquitetura de Publish/Subscribe, cada produto tem uma lista de eventos do qual espera ouvir e uma lista de eventos do qual pode publicar.
+Para definir que eventos que o produto é capaz de produzir ou de receber são utilizados aspetos, premetindo um nivel superior de modulariadade.

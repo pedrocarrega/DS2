@@ -1,0 +1,5 @@
+src.includes = src/
+src.excludes = src/i18n/PT.aj,\
+			   src/i18n/Messages_PT.properties,\
+			   src/Core/Luz.aj,\
+			   src/MovimentoFeature.aj

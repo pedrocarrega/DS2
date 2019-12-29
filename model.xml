@@ -39,8 +39,8 @@
 				<feature mandatory="true" name="SMS"/>
 			</and>
 			<or abstract="true" name="Deficiencias">
-				<feature name="Visuais"/>
-				<feature name="Auditivas"/>
+				<feature abstract="true" name="Visuais"/>
+				<feature abstract="true" name="Auditivas"/>
 			</or>
 		</and>
 	</struct>
